@@ -1,0 +1,179 @@
+\documentclass[11pt, a4paper]{report}
+% Margini
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm, centering, head=25.22153pt]{geometry}
+% Interlinea
+\linespread{1.0}
+
+\title{Fisica dello Stato Solido}
+\author{Erika Giacomantonio, Antony Riccio}
+\date{Novembre 2024}
+
+%-----------------------------------------------------------------------------------
+% Pacchetti
+\usepackage{braket}
+\usepackage{fancyhdr} %per abbellire lo stile della pagina. metto dentro anche le linee in alto alla pagina
+\usepackage{mathrsfs}
+\usepackage{amsmath} % AMS Math Package
+\usepackage{cancel} % linea di elisione su termini
+\usepackage[version=4]{mhchem} % per scrivere formule chimiche \ce{H2O}
+\usepackage{siunitx} % per scrivere le unità di misura: \SI{273.15}{\kelvin}
+\usepackage{amsthm} % Theorem Formatting
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{verbatim} %begin comment
+\usepackage{caption} %caption
+\usepackage{comment}
+\usepackage{derivative} % il comando pdv apre due graffe per numeratore e denominatore
+\usepackage{epigraph} %serve per le citazioni
+\usepackage{quoting}
+\usepackage{dirtytalk}
+\quotingsetup{font=small} %tutti e tre utilizzati per inserire la quote a inizio tesi
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel} % applicazione regole di scrittura per la lingua italiana 
+\usepackage[utf8]{inputenc} % codifica UTF-8
+%\usepackage{scrlayer-scrpage} % stili pagina per il frontespizio
+\usepackage{graphicx} % inserimento di immagini
+\usepackage{csquotes} % per le citazioni "in blocco"
+\usepackage[backend=biber, style=numeric, sorting=nyt]{biblatex} % bibliografia con pacchetto biblatex (https://ctan.org/pkg/biblatex?lang=en)
+\addbibresource{reference.bib}
+\usepackage{titlesec} % per la formattazione dei titoli delle sezioni, capitoli etc.
+\usepackage{float} % per il posizionamento delle immagini
+\usepackage[colorlinks=true, allcolors=black]{hyperref} %per link hypertext
+\usepackage[tableposition = top, figureposition = bottom, font = small]{caption}
+
+%-----------------------------------------------------------------------------------
+
+%dettagli di lavoro per il pacchetto fancyhdr
+\pagestyle{fancy}
+\rhead{}
+\fancyfoot[C]{\thepage}
+%%% Fine impostazioni fancyhdr.
+
+%\appto{\bibsetup}{\raggedright}
+
+\setlength{\parindent}{0pt} % per rimuovere le indentazioni automatiche
+
+%===================================================================================
+
+%Comandi nuovi
+\newcommand{\inglese}[1]{\foreignlanguage{english}{\em #1}}
+\DeclareMathOperator{\sgn}{sgn}
+
+% preferisco la linea sotto alla freccia alta per i vettori, ! per ora lascio la freccia su !
+%\renewcommand{\vec}[1]{\underline{\hspace{-0.1em}#1\hspace{-0.05em}}}
+
+% per i differenziali
+\renewcommand{\d}{\text{d}}
+
+% il forall normale è orribile
+\usepackage{stackengine}
+\usepackage{upgreek}
+\renewcommand{\forall}{\stackMath\rotatebox[origin=c]{180}{\stackinset{c}{0.2pt}{c}{-0.65pt}{\scalebox{1.5}[1.0]{-}}{\Uplambda}}\!}
+% stessa cosa vale per nexists
+\renewcommand{\nexists}{\stackMath\rotatebox[origin=c]{180}{\stackinset{c}{0.2pt}{c}{-0.65pt}{\scalebox{1.5}[1.0]{\textbackslash}}{E}}\!}
+
+% vettori colonna
+\newcommand{\vectorTwo}[2]{\begin{pmatrix} #1 \\ #2 \end{pmatrix}}
+
+%-----------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------
+
+% Colori
+\usepackage{xcolor}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{navy}{HTML}{000080}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=navy,  
+    citecolor=mygreen,     
+    urlcolor=blue    
+}
+
+%-----------------------------------------------------------------------------------
+
+% Formato delle intestazioni
+%\titleformat{\chapter}[Bloch]
+%  {\normalfont\LARGE\bfseries}{\thechapter.}{0.5em}{\LARGE}
+%\titlespacing{\chapter}{0pt}{-20pt}{25pt}
+
+% Formato delle intestazioni dei capitoli
+\titlespacing{\chapter}{0pt}{-20pt}{30pt} % Margini e spaziatura
+\titleformat{\chapter}[display]
+  {\normalfont\LARGE\bfseries} % Formattazione del testo
+  {Capitolo \thechapter} % "Capitolo #" allineato a sinistra
+  {20pt} % Spaziatura tra "Capitolo #" e il titolo
+  {\Huge} % Nessun comando aggiuntivo per il titolo
+
+%-----------------------------------------------------------------------------------
+
+\begin{document}
+
+% Frontespizio
+\fontsize{16pt}{18pt}\selectfont
+\maketitle
+
+% Pagina di revisione
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+    \large
+    \textbf{Nota di Revisione}
+    
+    \vspace{1cm}
+    
+    Questa è la versione revisionata e aggiornata \\
+    del corso di Fisica dello Stato Solido \\
+    per l'Anno Accademico 2025/2026.
+    
+    \vspace{0.5cm}
+    
+    Revisore: Giacomo Fracasso Diaferia \\
+    Data ultima revisione: Ottobre 2025
+    
+    \vspace{1cm}
+    
+    \textbf{Codice sorgente LaTeX disponibile su:} \\
+    \url{https://github.com/zosojack/SSP-LaTeX}
+    
+    \vspace{0.3cm}
+    
+    \small
+    \textit{Il codice è liberamente disponibile per consultazione e contributi.}
+\end{center}
+\vspace*{\fill}
+\clearpage
+
+% Indice
+\fontsize{14pt}{16pt}\selectfont
+\tableofcontents
+\thispagestyle{empty}
+
+\thispagestyle{empty}
+\clearpage
+\setcounter{page}{1}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+
+%-----------------------------------------------------------------------------------
+% Capitoli
+\fontsize{12pt}{14pt}\selectfont
+\input{chapters/1-Proprietà-Metalli.tex}
+\input{chapters/2-Cristalli.tex}
+\input{chapters/3-Elettroni-Potenziale-Periodico.tex}
+\input{chapters/4-Elettroni-Potenziale-Debole.tex}
+\input{chapters/5-Dinamica-Semiclassica.tex}
+\input{chapters/6-Superficie-Fermi.tex}
+\input{chapters/7-Classificazione-Solidi.tex}
+\input{chapters/8-Fononi.tex}
+\input{chapters/9-Nanostrutture.tex}
+\input{chapters/10-Superconduttori.tex}
+
+\end{document}

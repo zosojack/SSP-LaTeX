@@ -1,0 +1,142 @@
+ELENCO IMMAGINI PER CAPITOLI
+===============================
+!!! In ordine di apparizione !!!
+
+CAPITOLO 1 - Proprietà Metalli
+===============================
+- FDTmagg0.png
+- fermidirac2.png
+- coronacircolare.png
+- densstati3d.png
+- dosvsen.png
+- cvCLvsQ.png
+- FD3.png
+
+CAPITOLO 2 - Cristalli
+======================
+- xraydiff.png
+- strutturacrist.png
+- reticoliB.png
+- nonBL.png
+- cubosemplice.png
+- BCC.png
+- dimBCC.png
+- FCC.png
+- WSC.png
+- struttcristall.png
+- diamantebase1.png
+- diamantebase2.png
+- HCP1.png
+- HCP2.png
+- NaCl.png
+- CsCl.png
+- BZ.png
+- esBZ.png
+- dimpiani.png
+- indicemiller.png
+- braggdiffr.png
+- vonform.png
+- vonlaue2.png
+- VLBeq.png
+- ewald.png
+- metVL.png
+- esEd.png
+- BCCSC.png
+
+CAPITOLO 3 - Elettroni Potenziale Periodico
+===========================================
+- potper.png
+- esbande.png
+- densst1.png
+- densst2.png
+
+CAPITOLO 4 - Elettroni Potenziale Debole
+========================================
+- soluzpotdebole.png
+- seplivU.png
+- elevelBraggP1.png
+- elevelBraggP2.png
+- andamentiUpsi.png
+- livellien1Da.png
+- livellien1Db.png
+- livellien1Dc.png
+- livellien1Dd.png
+- livellien1De.png
+- reduced.png
+- repeated.png
+- bande3d1.png
+- bande3d2.png
+- zonediBr.png
+
+CAPITOLO 5 - Dinamica Semiclassica
+==================================
+- oscilldiBloch.png
+
+CAPITOLO 6 - Superficie Fermi
+=============================
+- vanalphen.png
+- livellilandau.png
+- compresslvl.png
+- oscillazdos.png
+- bccmetallialk.png
+- enmetalc.png
+- sup Fermi met alc.png
+- metallimono.png
+- metnob.png
+- transbanda.png
+- trasm met alc.png
+- metallidiv.png
+
+CAPITOLO 7 - Classificazione Solidi
+===================================
+- cristNaCl.png
+- bandealkhal.png
+- Distmetalli.png
+- dip.png
+- lennardjones.png
+- valori lennard jones.png
+- valoriAn.png
+- madel1d.png
+- madel3d.png
+- valori en crist ionici.png
+
+CAPITOLO 8 - Fononi
+===================
+- Fononi.jpeg
+- Branche.jpeg
+- dispersionefononi.png (commentato: dispersionefononi.png)
+- 2phonscatt.png
+
+CAPITOLO 9 - Nanostrutture
+==========================
+- Nanostr.jpeg
+- eterostruttura.png
+- MBE.png
+- cross section.png
+- IMG_1788.jpg (usata 2 volte)
+- IMG_1790.jpg (usata 2 volte)
+- IMG_1791.jpg
+- IMG_1792.jpg (usata 2 volte)
+- IMG_1793.jpg (usata 2 volte)
+
+CAPITOLO 10 - Superconduttori
+=============================
+- eff meissner.png
+- no eff meissner.png
+- calspF.png
+- diagfaseH.png
+- eef.png
+
+IMMAGINI NON UTILIZZATE NEI CAPITOLI
+====================================
+Le seguenti immagini sono presenti nella cartella images/ ma non sono referenziate nei capitoli LaTeX:
+
+- bandeCu.png
+- dos1d.png
+- fononi1.png
+- lacune1.png
+- lacune2.png
+- PLQW.png
+- reticolo autostati.png
+- riempbande.png
+- splitU.png
