@@ -14,13 +14,13 @@ Questa è la versione revisionata e aggiornata all'Anno Accademico 2025/2026 deg
 
 Il documento è organizzato nei seguenti capitoli:
 
-1. **Proprietà dei Metalli** - `1-Proprietà-Metalli.tex`
+1. **Proprietà termiche dei metalli** - `1-Proprietà-Metalli.tex`
 2. **Cristalli** - `2-Cristalli.tex`
 3. **Elettroni in Potenziale Periodico** - `3-Elettroni-Potenziale-Periodico.tex`
 4. **Elettroni in Potenziale Debole** - `4-Elettroni-Potenziale-Debole.tex`
-5. **Dinamica Semiclassica** - `5-Dinamica-Semiclassica.tex`
-6. **Superficie di Fermi** - `6-Superficie-Fermi.tex`
-7. **Classificazione dei Solidi** - `7-Classificazione-Solidi.tex`
+5. **Dinamica Semiclassica degli Elettroni** - `5-Dinamica-Semiclassica.tex`
+6. **Misurazione della Superficie di Fermi** - `6-Superficie-Fermi.tex`
+7. **Energia di Coesione e Classificazione dei Solidi** - `7-Classificazione-Solidi.tex`
 8. **Fononi** - `8-Fononi.tex`
 9. **Nanostrutture** - `9-Nanostrutture.tex`
 10. **Superconduttori** - `10-Superconduttori.tex`
